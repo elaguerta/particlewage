@@ -1,11 +1,13 @@
-#particlewave
+<b>Particle Wave</b>
 
 This Arduino project maps values from a CO sensor to an LED light strip, used to create these visualizations:
 https://www.flickr.com/photos/long_exposure/sets/72157660025495836/
 
-Hardware
+The file "FINAL.ino" will run with the hardware below and display sensor values using the same scale and colors as the ones in the Long Exposure image set. The other files involve tests for calibration, the light strip, and displaying values in high wind. 
 
-CO Sensor and echem board
+<b>Hardware</b>
+
+<i>CO Sensor and echem board</i>
 
 A sensor at head height on the stick continually measures carbon monoxide (abbreviated CO). Special electrolyte goo inside the sensor reacts with the CO in the atmosphere and changes electrical current passing through it. The sensor sends information about the CO level to a circuit board called an echem328. It was designed to turn the readings from the sensor into useful information. 
 
@@ -18,7 +20,7 @@ For more information on the sensor visit Alphasense: http://www.alphasense.com
 For more information on the echem board visit: http://circuitsci.com/
 
 
-Arduino microcontroller
+<i> Arduino microcontroller </i>
 
 The echem sends information to an Arduino circuit board. Arduino is an open source microcontroller designed to be used by everyone from experts to amateurs. Arduinos can be programmed to send and receive information from other electronic devices. Our Arduino board runs a program which converts the values it receives from the sensor into a number between 0 and 60. The Arduino then sends a message to the lights to tell which of the 60 LEDs to light up and what color they should be.
 
@@ -26,7 +28,7 @@ The Arduino uses a software serial port to communicate between the Arduino and e
 
 For more information on Arduino, check to see if your local maker space has a class or visit: https://www.arduino.cc/
 
-Dotstar LED light strip
+<i> Dotstar LED light strip </i>
 
 The Arduino sends instructions to a strip of 60 small lights called RGB LEDs. The lights are wired together, but each light can be individually controlled, changing color and intensity. The Dotstars are designed for light painting and other applications where a fast refresh rate is necessary. A collection of code called a library makes it easy to control the Dotstars and create fading, flashing, and many other effects.
 
