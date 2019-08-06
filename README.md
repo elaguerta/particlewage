@@ -3,6 +3,8 @@
 This Arduino project maps values from a CO sensor to an LED light strip, used to create these visualizations:
 https://www.flickr.com/photos/long_exposure/sets/72157660025495836/
 
+See the "Long Exposure Poster.pdf" file for a quick overview of the visualization process. 
+
 The file "FINAL.ino" will run with the hardware below and display sensor values using the same scale and colors as the ones in the Long Exposure image set. The other files involve tests for calibration, the light strip, and displaying values in high wind. 
 
 <b>Hardware</b>
